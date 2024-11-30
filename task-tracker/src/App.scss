@@ -1,0 +1,86 @@
+$app-bg: #f4f4f4;
+$primary: #007bff;
+$secondary: #6c757d;
+
+.app {
+  text-align: center;
+  background-color: $app-bg;
+  min-height: 100vh;
+  font-family: "Arial", sans-serif;
+
+  h1 {
+    color: $primary;
+  }
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+button {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.dark-mode {
+  background-color: #333;
+  color: #f4f4f4;
+}
+
+button {
+  margin: 1rem auto;
+  display: block;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+
+  .dark-mode-toggle {
+    margin-bottom: 20px;
+  }
+
+  .task-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Horizontally center */
+    justify-content: center; /* Vertically center */
+    gap: 20px; /* Space between elements */
+    max-width: 500px; /* Optional: to limit the width */
+    margin: 0 auto; /* Center the container on the page */
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+}

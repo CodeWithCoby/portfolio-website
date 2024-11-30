@@ -1,0 +1,45 @@
+@import "../styles/variables";
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  margin: 10px 0;
+  background-color: white;
+  border: 1px solid $secondary;
+  border-radius: 5px;
+
+  &.completed {
+    text-decoration: line-through;
+    color: $secondary;
+  }
+
+  span {
+    cursor: pointer;
+  }
+
+  button {
+    background: none;
+    border: none;
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.work {
+  border-left: 5px solid blue;
+}
+
+.personal {
+  border-left: 5px solid green;
+}
+
+.urgent {
+  border-left: 5px solid red;
+}

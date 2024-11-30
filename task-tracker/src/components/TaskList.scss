@@ -1,0 +1,62 @@
+.task-list {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.task-enter {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.task-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 300ms ease-in-out;
+}
+
+.task-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.task-exit-active {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 300ms ease-in-out;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  margin-bottom: 0.5rem;
+  padding: 0.75rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task:hover {
+  background-color: #e9e9e9;
+}
+
+button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #c82333;
+}
+
+.task {
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.task:hover {
+  transform: scale(1.02);
+}
